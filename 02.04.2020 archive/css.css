@@ -1,0 +1,111 @@
+	#related{
+		position: fixed;
+		right: 0px;
+		top: 120px;
+		height: 100%;
+		width: 250px;
+		overflow: hidden;
+	}
+	.related_item{
+		position: relative;
+		height: 100px;
+		width: 178px;
+		background: black;
+		z-index: -1;
+		/* margin-top: 20px; */
+		margin-top: -10px;
+		box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+		right: -230px;
+		cursor: pointer;
+		border: 2px rgba(127, 51, 51, 1) solid;
+		-webkit-filter: grayscale(1) sepia(0.5);
+		filter: grayscale(1) sepia(0.5);
+		-o-filter: grayscale(1) sepia(0.5);
+		-moz-filter: grayscale(1) sepia(0.5);
+		-webkit-transition: right 0.5s ease, transform 0.5s ease, margin-top 0.5s ease, -webkit-filter 0.5s ease, filter 0.5s ease, -o-filter 0.5s ease, -moz-filter 0.5s ease;
+		transition: right 0.5s ease, transform 0.5s ease, margin-top 0.5s ease, -webkit-filter 0.5s ease, filter 0.5s ease, -o-filter 0.5s ease, -moz-filter 0.5s ease;
+	}.related_item:hover{
+		right: -75px;
+		transform: rotate(-2deg);
+		border: black 2px dashed;
+		-webkit-filter: grayscale(0) sepia(0);
+		filter: grayscale(0) sepia(0);
+		-o-filter: grayscale(0) sepia(0);
+		-moz-filter: grayscale(0) sepia(0);
+	}
+	.related_item_under{
+		right: -300px;
+	}
+	.related_tag_interesting{
+		
+	}
+	.related_tag{
+		background-position: center center;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		height: 16px;
+		width: 16px;
+	}
+	.related_tag_away{
+		margin-top: -100px;
+		right: -300px;
+	}
+	
+	
+	.related_lastvideo{
+		display: none;
+		position: absolute;
+		height: 100px;
+		width: 20px;
+		background: white;
+		margin-top: 20px;
+		right: 0px;
+		cursor: pointer;
+		opacity: 0;
+		-webkit-transition: all 0.5s ease;
+		transition: all 0.5s ease;
+	}.related_lastvideo:hover{
+		box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.5);
+		width: 178px;
+		height: 178px; 
+	}
+	.related_light_on{
+		box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.5);
+	}
+	.related_lastvideo_label1{
+		position: fixed;
+		width: 150px;
+		color: black;
+		right: -160px;
+		top: 25px;
+		cursor: pointer;
+		text-align: right;
+		text-transform: uppercase;
+		-webkit-transition: right 0.5s ease;
+		transition: right 0.5s ease;
+	}
+	.related_lastvideo_label2{
+		position: fixed;
+		width: 175px;
+		color: black;
+		right: -160px;
+		top: 45px;
+		cursor: pointer;
+		text-align: right;
+		font-size: 10pt;
+		text-transform: uppercase;
+		font-weight: bold;
+		text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+		-webkit-transition: right 0.6s ease;
+		transition: right 0.6s ease;
+	}
+	.related_lastvideo_label_out{
+		right: 190px;
+	}
+	
+	
+	@media only screen and (max-device-width: 480px) {
+		.related_lastvideo{
+			display: none;
+		}
+	}
